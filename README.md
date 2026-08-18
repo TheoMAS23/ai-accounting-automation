@@ -158,51 +158,49 @@ Classification Human Review
        ERP TXT File
 ```
 
+## Synthetic Example
+
+The example below uses completely fictional data and is intended only to demonstrate the workflow.
+
+### 1. Input
+
+A financial transaction is received from a bank statement:
+
+```text
+Date: 15/07/2026
+Description: PIX RECEIVED - DEMO CLIENT LTDA
+Amount: BRL 1,250.00
+Type: Credit
+```
+
+### 2. Processing
+
+The workflow:
+
+1. Extracts and normalizes the transaction data.
+2. Checks deterministic accounting and business rules.
+3. Searches for sufficient information to classify the transaction.
+4. Routes uncertain situations for AI-assisted analysis or human review.
+5. Validates the accounting entry before generating the final output.
+
+### 3. Structured Result
+
+```text
+Transaction: PIX RECEIVED
+Classification: Customer Receipt
+Status: Validated
+Human Review: Not Required
+Output: Ready for ERP import
+```
+
+### 4. ERP-Ready Output
+
+Illustrative TXT output:
+
+```text
+15/07/2026;DEBIT_ACCOUNT;CREDIT_ACCOUNT;1250,00;HISTORY_CODE;DEMO CLIENT RECEIPT;COMPANY_CODE
+```
+
+> Account numbers, company codes and transaction details in this example are fictional placeholders. Production accounting rules and client information are not published.
+
 ## Privacy & Security
-
-This repository is a **portfolio representation of the project**.
-
-Production workflows, client files and confidential accounting information are intentionally not published.
-
-No real client:
-
-* names;
-* CNPJs;
-* bank statements;
-* transactions;
-* credentials;
-* accounting documents;
-* internal business rules;
-
-are included in this public repository.
-
-Any examples published here will use **synthetic or anonymized data**.
-
-## Current Development
-
-I am continuously improving both the project and my technical knowledge.
-
-Current areas of study include:
-
-* REST APIs
-* JSON
-* Git & GitHub
-* Programming fundamentals
-* Integration architecture
-
-Python is planned as my next major programming focus.
-
-## Project Status
-
-**Active development**
-
-The automation is already used in real accounting processes while new validations, integrations and reliability improvements continue to be developed.
-
-## About Me
-
-I'm **Théo Moron**, focused on **Applied AI, AI Automation, n8n and AI Agents**.
-
-I currently work on AI and process automation initiatives inside an accounting firm, developing solutions aimed at reducing repetitive work and applying AI to real business processes.
-
-[LinkedIn](https://www.linkedin.com/in/theo-moron-07904642b) · [GitHub Profile](https://github.com/TheoMAS23)
-
