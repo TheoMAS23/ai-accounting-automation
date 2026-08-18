@@ -42,6 +42,33 @@ Accounting Entry Generation
         ↓
 ERP-Ready TXT Output
 ```
+```mermaid
+flowchart LR
+    A["Bank Statements<br/>Spreadsheets<br/>Financial Documents"] --> B["Data Extraction<br/>& Organization"]
+
+    B --> C["Deterministic<br/>Business Rules"]
+
+    C --> D{"Transaction<br/>Resolved?"}
+
+    D -->|Yes| E["Automatic<br/>Classification"]
+
+    D -->|No| F["AI-Assisted<br/>Analysis"]
+
+    F --> G{"Confidence /<br/>Validation"}
+
+    G -->|Needs Review| H["Human-in-the-Loop<br/>Review"]
+
+    G -->|Validated| I["Validated<br/>Accounting Entry"]
+
+    H --> I
+    E --> I
+
+    I --> J["Final Validation"]
+
+    J --> K["ERP-Ready<br/>TXT Output"]
+
+    K --> L["Domínio ERP"]
+```
 
 ## Core Features
 
