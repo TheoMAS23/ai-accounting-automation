@@ -204,3 +204,18 @@ Illustrative TXT output:
 > Account numbers, company codes and transaction details in this example are fictional placeholders. Production accounting rules and client information are not published.
 
 ## Privacy & Security
+This repository is a **portfolio representation of the project**.
+
+Production workflows, client files and confidential accounting information are intentionally not published.
+
+No real client data is included in this public repository, including:
+
+* names;
+* CNPJs;
+* bank statements;
+* transactions;
+* credentials;
+* accounting documents;
+* internal business rules.
+
+Any examples published here use **synthetic or anonymized data**.
