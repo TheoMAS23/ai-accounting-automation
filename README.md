@@ -34,19 +34,12 @@ My work focuses on:
 
 ## Processing model
 
-```mermaid
-flowchart TD
-    input["Bank statements and spreadsheets"] --> normalize["Extract and normalize"]
-    normalize --> rules["Apply explicit rules"]
-    rules --> resolved{"Enough evidence?"}
-    resolved -->|Yes| validate["Validate proposed entries"]
-    resolved -->|No| assist["Optional AI-assisted analysis"]
-    assist --> review["Human review"]
-    review --> validate
-    validate --> accepted{"Validation complete?"}
-    accepted -->|Yes| output["Generate structured ERP import file"]
-    accepted -->|No| pending["Keep pending with a reason"]
-```
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/processing-model-mobile.svg">
+  <img src="assets/processing-model.svg" width="100%" alt="Normalize financial inputs, apply explicit rules, review unresolved cases, validate entries, then generate ERP output only when complete. Otherwise keep the item pending.">
+</picture>
+
+[Editable diagram source](docs/processing-model.mmd)
 
 The diagram describes the workflow at an architectural level. It is not an
 executable definition or a claim that every integration is publicly available.

@@ -1,0 +1,11 @@
+flowchart TD
+    input["Bank statements and spreadsheets"] --> normalize["Extract and normalize"]
+    normalize --> rules["Apply explicit rules"]
+    rules --> resolved{"Enough evidence?"}
+    resolved -->|Yes| validate["Validate proposed entries"]
+    resolved -->|No| assist["Optional AI-assisted analysis"]
+    assist --> review["Human review"]
+    review --> validate
+    validate --> accepted{"Validation complete?"}
+    accepted -->|Yes| output["Generate structured ERP import file"]
+    accepted -->|No| pending["Keep pending with a reason"]

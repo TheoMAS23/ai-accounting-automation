@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1136" viewBox="0 0 600 1136" role="img" aria-labelledby="title desc">
+<title id="title">Accounting automation processing model</title>
+<desc id="desc">Normalize financial inputs, apply explicit rules, review unresolved cases with optional AI assistance, validate entries, and generate ERP output only when complete. Otherwise keep the item pending.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#67DCC6" stroke-width="1.4"/></marker></defs>
+<rect x=".5" y=".5" width="599" height="1135" rx="14" fill="#0B1728" stroke="#294561"/>
+<g fill="#122841" stroke="#294561">
+<rect x="32" y="32" width="536" height="120" rx="10"/><rect x="32" y="192" width="536" height="120" rx="10"/>
+<rect x="32" y="352" width="536" height="120" rx="10"/><rect x="32" y="512" width="536" height="160" rx="10"/>
+<rect x="32" y="712" width="536" height="120" rx="10"/><rect x="32" y="872" width="536" height="232" rx="10"/>
+</g>
+<g fill="none" stroke="#67DCC6" stroke-width="2" marker-end="url(#arrow)"><path d="M300 152V192"/><path d="M300 312V352"/><path d="M300 472V512"/><path d="M300 672V712"/><path d="M300 832V872"/></g>
+<g font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle" fill="#EFF5FC" font-size="34" font-weight="500">
+<text x="300" y="86">Financial inputs</text><text x="300" y="246">Normalize</text><text x="300" y="406">Explicit rules</text>
+<text x="300" y="569">Review if unresolved</text><text x="300" y="766">Validate entries</text>
+<text x="300" y="931">Generate ERP output</text><text x="300" y="1049">Otherwise: keep pending</text>
+</g>
+<g font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle" fill="#B3C7DE" font-size="29">
+<text x="300" y="128">Statements and spreadsheets</text><text x="300" y="288">Extract and structure</text><text x="300" y="448">Evidence before inference</text>
+<text x="300" y="612">Optional AI assistance</text><text x="300" y="650">Human review before approval</text><text x="300" y="808">Check the proposed result</text>
+<text x="300" y="975">Only when validation is complete</text>
+</g></svg>

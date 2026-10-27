@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<title id="title">Accounting automation processing model</title>
+<desc id="desc">Financial inputs are normalized and checked against explicit rules. Unresolved cases may receive AI assistance and human review. All proposed entries are validated. Complete results produce ERP output; incomplete results remain pending.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#67DCC6" stroke-width="1.4"/></marker></defs>
+<rect x=".5" y=".5" width="999" height="619" rx="14" fill="#0B1728" stroke="#294561"/>
+<g fill="#122841" stroke="#294561">
+<rect x="40" y="40" width="264" height="104" rx="10"/><rect x="368" y="40" width="264" height="104" rx="10"/><rect x="696" y="40" width="264" height="104" rx="10"/>
+<rect x="696" y="288" width="264" height="128" rx="10"/><rect x="368" y="288" width="264" height="128" rx="10"/>
+<rect x="40" y="288" width="264" height="128" rx="10"/><rect x="368" y="488" width="264" height="92" rx="10"/>
+</g>
+<g fill="none" stroke="#67DCC6" stroke-width="1.6" marker-end="url(#arrow)">
+<path d="M304 92H368"/><path d="M632 92H696"/>
+<path d="M828 144V204H500V288"/><path d="M828 204V288"/>
+<path d="M696 352H632"/><path d="M368 352H304"/><path d="M500 416V488"/>
+</g>
+<g font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle" fill="#EFF5FC" font-size="26" font-weight="500">
+<text x="172" y="86">Financial inputs</text><text x="500" y="86">Normalize</text><text x="828" y="86">Explicit rules</text>
+<text x="828" y="331">Optional AI</text><text x="828" y="367">Human review</text>
+<text x="500" y="344">Validate entries</text>
+<text x="172" y="344">ERP output</text>
+<text x="500" y="541">Keep pending</text>
+</g>
+<g font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle" fill="#B3C7DE" font-size="20">
+<text x="172" y="120">Statements and sheets</text><text x="500" y="120">Extract and structure</text><text x="828" y="120">Evidence before inference</text>
+<text x="828" y="397">When unresolved</text><text x="500" y="380">Before generating output</text><text x="172" y="380">Only when complete</text>
+<text x="636" y="185">Sufficient evidence</text><text x="895" y="250">Unresolved</text><text x="579" y="459">Incomplete</text>
+</g></svg>
